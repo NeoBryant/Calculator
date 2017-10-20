@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+ 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<title>高级计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/advanced_calculator.css">
+		<script type="text/javascript" src="js/advanced_calculator.js" > </script>
+	</head>
+	<body>
+		<p id="title">Advanced iCalculator</p>
+		<div id="calculator_position">
+			<div id="container">
+				<form name="calculator" action="" method="get"> 
+					<div id="error"></div>
+					<div id="output_field">
+						<input type="text" name="numScreen" class="screen" value="0" onfocus="this.blur();" /> 
+					</div>
+					<div id="keys">
+						<div id="rows">
+							<ul>
+								<li onclick="square()" class="bottons advanced_bottons"><span class="word_height">x<sup>2</sup></span></li>	
+								<li onclick="cube()" class="bottons advanced_bottons"><span class="word_height">x<sup>3</sup></span></li>	
+								<li onclick="power()" class="bottons advanced_bottons"><span class="word_height">x<sup>y</sup></span></li>									
+								<li onclick="command(7)" class="bottons">7</li>	
+								<li onclick="command(8)" class="bottons">8</li>
+								<li onclick="command(9)" class="bottons">9</li>
+								<li onclick="divide()" class="bottons right_bottons">÷</li>
+							</ul>	
+						</div>
+						<div id="rows">
+							<ul>
+								<li onclick="root(2)" class="bottons advanced_bottons">√</li>	
+								<li onclick="factorial()" class="bottons advanced_bottons">x!</li>	
+								<li onclick="rand()" class="bottons advanced_bottons">Rand</li>								
+								<li onclick="command(4)" class="bottons">4</li>	
+								<li onclick="command(5)" class="bottons">5</li>
+								<li onclick="command(6)" class="bottons">6</li>
+								<li onclick="times()" class="bottons right_bottons">×</li>
+							</ul>
+						</div>
+						<div id="rows">
+							<ul>
+								<li onclick="naturalLogarithm()" class="bottons advanced_bottons">ln</li>	
+								<li onclick="logarithm()" class="bottons advanced_bottons">lg</li>	
+								<li onclick="persent()" class="bottons advanced_bottons">%</li>								
+								<li onclick="command(1)" class="bottons">1</li>	
+								<li onclick="command(2)" class="bottons">2</li>
+								<li onclick="command(3)" class="bottons">3</li>
+								<li onclick="minus()" class="bottons right_bottons">-</li>
+							</ul>
+						</div>
+						<div id="rows">
+							<ul>
+								<li onclick="sine()" class="bottons advanced_bottons">sin</li>	
+								<li onclick="cosine()" class="bottons advanced_bottons">cos</li>	
+								<li onclick="tangent()" class="bottons advanced_bottons">tan</li>								
+								<li onclick="command(0)" class="bottons">0</li>	
+								<li onclick="dot()" class="bottons">.</li>
+								<li onclick="del()" class="bottons">←</li>
+								<li onclick="plus()" class="bottons right_bottons">+</li>
+							</ul>
+						</div>
+						<div id="rows">
+							<ul>
+								<li onclick="reciprocal()" class="bottons advanced_bottons">1/x</li>	
+								<li onclick="ePowerX()" class="bottons advanced_bottons"><span class="word_height">e<sup>x</sup></span></li>	
+								<li onclick="tenPowerX()" class="bottons advanced_bottons"><span class="word_height">10<sup>x</sup></span></li>								
+								<li onclick="lbracket()" class="bottons bottom_bottons">(</li>	
+								<li onclick="rbracket()" class="bottons bottom_bottons">)</li>
+								<li onclick="clearscreen()" class="bottons bottom_bottons">CE</li>
+								<li onclick="equal()" class="bottons right_bottons">=</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="foot"> 
+			<span id="note"></span> 
+		</div> 
+		<div id="icon">
+			<a href="calculator.html">
+				<img src="img/log.png" alt="icon" href="calculator.html">
+			</a>
+		</div>
+	</body>
+</html>

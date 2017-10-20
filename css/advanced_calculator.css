@@ -1,0 +1,170 @@
+
+body {
+    text-align: center;
+    background-image: url(../img/bcimg.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+
+    background-attachment: fixed;
+
+}
+
+#title {
+    margin: 40px 0px 30px 0px;
+    font-size: 60px;
+    font-family: Apple;
+}
+
+#icon {
+    margin-top: 40px;
+
+    opacity: .7;
+}
+
+#icon:hover {
+    opacity: 1;
+}
+
+#icon img {
+    width: 5%;
+    height: 5%;
+}
+
+
+
+#calculator_position {
+    overflow: hidden;
+}
+
+#container {
+    width: 500px;
+    height: 470px;
+    margin: 0 auto;
+    margin-top: 0px;
+
+    opacity: 1;
+    border-radius: 10%;
+    background-color: #131313;
+}
+
+
+#error {
+    width: 280px;
+    height: 20px;
+
+    text-align: center;
+
+    color: white;
+}
+
+#ouput_field {
+    margin: 10px 0 10px 0;
+}
+
+#output_field .screen {
+    font-size: 40px;
+
+    position: relative;
+    left: 6px;
+
+    width: 440px;
+    height: 80px;
+    margin: 10px;
+
+    text-align: right;
+
+    color: white;
+    border: 2px solid #131313;
+    background-color: #131313;
+
+    direction: ltr;
+}
+
+#keys {
+    position: relative;
+    left: 6px;
+
+    width: 484px;
+    height: 350px;
+}
+
+.bottons {
+    font-size: 20px;
+
+    width: 55px;
+    height: 55px;
+    margin: 6px;
+
+    text-align: center;
+
+    color: white;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.right_bottons {
+    background-color: #eb8905;
+}
+
+.bottom_bottons {
+    color: black;
+    background-color: #a5a5a5;
+}
+
+.advanced_bottons {
+    background-color: #1c1c1c;
+}
+
+.word_height {
+    line-height: 0;
+}
+
+/* ------------------ */
+
+ul {
+    display: block;
+    overflow: hidden ;
+
+    width: 484px;
+    height: auto;
+    margin: 0 10px 0 10px;
+    padding: 0;
+}
+
+li {
+    line-height: 57px;
+
+    display: inline;
+    float: left;
+
+    list-style: none;
+
+    opacity: 1;
+    background-color: #eaeaea;
+}
+
+li:hover {
+    cursor: pointer;
+
+    opacity: .5;
+}
+li:active {
+    cursor: pointer;
+
+    background-color: white;
+}
+
+.foot {
+    margin-top: 20px;
+}
+
+span#note {
+    font-family: San Francisco, 'Microsoft Yahei', 'SimSun', Tahoma;
+    font-size: 20px;
+
+    overflow: hidden;
+
+    height: auto;
+
+    color: black;
+}

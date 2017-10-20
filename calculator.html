@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+ 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+		<title>简单计算器</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/calculator.js" > </script>
+	</head>
+	<body>
+		<p id="title">iCalculator</p>
+		<div id="calculator_position">
+			<div id="container">
+				<form name="calculator" action="" method="get"> 
+					<div id="error"></div>
+					<div id="output_field">
+						<input type="text" name="numScreen" class="screen" value="0" onfocus="this.blur();" /> 
+					</div>
+					<div id="keys">
+						<div id="rows">
+							<ul>
+								<li onclick="command(7)" class="bottons">7</li>	
+								<li onclick="command(8)" class="bottons">8</li>
+								<li onclick="command(9)" class="bottons">9</li>
+								<li onclick="divide()" class="bottons right_bottons">/</li>
+							</ul>	
+						</div>
+						<div id="rows">
+							<ul>
+								<li onclick="command(4)" class="bottons">4</li>	
+								<li onclick="command(5)" class="bottons">5</li>
+								<li onclick="command(6)" class="bottons">6</li>
+								<li onclick="times()" class="bottons right_bottons">*</li>
+							</ul>
+						</div>
+						<div id="rows">
+							<ul>
+								<li onclick="command(1)" class="bottons">1</li>	
+								<li onclick="command(2)" class="bottons">2</li>
+								<li onclick="command(3)" class="bottons">3</li>
+								<li onclick="minus()" class="bottons right_bottons">-</li>
+							</ul>
+						</div>
+						<div id="rows">
+							<ul>
+								<li onclick="command(0)" class="bottons">0</li>	
+								<li onclick="dot()" class="bottons">.</li>
+								<li onclick="del()" class="bottons">←</li>
+								<li onclick="plus()" class="bottons right_bottons">+</li>
+							</ul>
+						</div>
+						<div id="rows">
+							<ul>
+								<li onclick="lbracket()" class="bottons bottom_bottons">(</li>	
+								<li onclick="rbracket()" class="bottons bottom_bottons">)</li>
+								<li onclick="clearscreen()" class="bottons bottom_bottons">CE</li>
+								<li onclick="equal()" class="bottons right_bottons">=</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="foot"> 
+			<span id="note"></span> 
+		</div> 
+		<div id="icon">
+			<a href="advanced_calculator.html">
+				<img src="img/log.png" alt="icon" href="calculator.html">
+			</a>
+		</div>		
+	</body>
+</html>
